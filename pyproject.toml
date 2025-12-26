@@ -1,0 +1,23 @@
+[project]
+name = "de-test-repo"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "user",email = "65189898+user@users.noreply.github.com"}
+]
+
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "ipdb (>=0.13.13,<0.14.0)",
+    "pandas (>=2.3.1,<2.4.0)",
+    "pytest (>=8.4.1,<8.5.0)",
+    "requests (>=2.32.4,<2.33.0)"
+]
+
+[tool.poetry]
+package-mode = false
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
