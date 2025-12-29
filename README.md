@@ -75,3 +75,12 @@ with this approach).
 
 There is only one test and, if your environment is setup correctly, it should
 run but the assertion will fail.
+
+## Bonus PySpark excercise:
+Examine the pyspark_coding.py. Your task is to add a new column called comfort_level that categorizes each hourly reading based on the following business rules:
+
+"Cold": when temperature_2m is below 4.5°C
+"Moderate": when temperature_2m is between 4.5°C and 5.5°C (inclusive)
+"Warm": when temperature_2m is above 5.5°C
+
+Also add a column called heat_index_diff that calculates the difference between approx_heat_index and temperature_2m."
