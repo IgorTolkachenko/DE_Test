@@ -76,7 +76,7 @@ with this approach).
 There is only one test and, if your environment is setup correctly, it should
 run but the assertion will fail.
 
-## PySpark excercise:
+## Excercise 2 - PySpark:
 Examine the pyspark_coding.py. Your task is to add a new column called comfort_level that categorizes each hourly reading based on the following business rules:
 
 "Cold": when temperature_2m is below 4.5°C
