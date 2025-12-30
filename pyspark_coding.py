@@ -35,28 +35,17 @@ json_data = """
 {"time":"2025-12-26T23:00:00.000Z","temperature_2m":5.6,"approx_heat_index":21.83}
 """
 
-# Write JSON data to a temporary file (simulating data source)
 with open("/tmp/weather_data.json", "w") as f:
     f.write(json_data)
 
-# Read JSON data into DataFrame
 df = spark.read.json("/tmp/weather_data.json")
 
-# Display original DataFrame
 print("Original DataFrame:")
 df.show(5, truncate=False)
 
 # Write your solution code here.
 # df_transformed = 
 
-# Display final transformed DataFrame
+
 print("\nTransformed DataFrame with comfort_level and heat_index_diff:")
 df_transformed.show(truncate=False)
-
-# Optional: Show schema
-print("\nFinal Schema:")
-df_transformed.printSchema()
-
-# Optional: Show distribution of comfort levels
-print("\nComfort Level Distribution:")
-df_transformed.groupBy("comfort_level").count().show()
